@@ -35,6 +35,15 @@ BS_:
 
 BU_: Airbag_MQB BAP_Tester_MQB BMS_MQB Datenlogger_MQB Gateway_MQB Getriebe_DQ_Hybrid_MQB Getriebe_DQ_MQB LEH_MQB Motor_Diesel_MQB Motor_Hybrid_MQB Motor_Otto_MQB SAK_MQB Waehlhebel_MQB Vector__XXX l c i XXX
 
+BO_ 304 PLA_01: 8 XXX
+ SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] ""  XXX
+ SG_ COUNTER : 8|4@1+ (1,0) [0|15] ""  XXX
+ SG_ Status_1 : 13|1@1+ (1,0) [0|1] ""  XXX
+ SG_ steer_deg : 14|15@1+ (0.024,0) [0|720] "Unit_DegreOfArc"  XXX
+ SG_ steer_direction : 31|1@1+ (1,0) [0|1] ""  XXX
+ SG_ Status_2 : 33|1@1+ (1,0) [0|1] ""  XXX
+ SG_ Status_3 : 34|1@1+ (1,0) [0|1] ""  XXX
+ SG_ Status_4 : 35|1@1+ (1,0) [0|1] ""  XXX
 
 BO_ 290 ACC_06: 8 Gateway_MQB
  SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" Getriebe_DQ_Hybrid_MQB,Getriebe_DQ_MQB,Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
