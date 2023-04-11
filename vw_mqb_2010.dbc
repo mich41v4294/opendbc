@@ -35,15 +35,15 @@ BS_:
 
 BU_: Airbag_MQB BAP_Tester_MQB BMS_MQB Datenlogger_MQB Gateway_MQB Getriebe_DQ_Hybrid_MQB Getriebe_DQ_MQB LEH_MQB Motor_Diesel_MQB Motor_Hybrid_MQB Motor_Otto_MQB SAK_MQB Waehlhebel_MQB Vector__XXX l c i XXX
 
-BO_ 304 PLA_01: 8 XXX
- SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] ""  XXX
- SG_ COUNTER : 8|4@1+ (1,0) [0|15] ""  XXX
- SG_ Status_1 : 13|1@1+ (1,0) [0|1] ""  XXX
- SG_ steer_deg : 14|15@1+ (0.024,0) [0|720] "Unit_DegreOfArc"  XXX
- SG_ steer_direction : 31|1@1+ (1,0) [0|1] ""  XXX
- SG_ Status_2 : 33|1@1+ (1,0) [0|1] ""  XXX
- SG_ Status_3 : 34|1@1+ (1,0) [0|1] ""  XXX
- SG_ Status_4 : 35|1@1+ (1,0) [0|1] ""  XXX
+BO_ 304 PLA_01: 8 Gateway_MQB
+ SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" Getriebe_DQ_Hybrid_MQB,Getriebe_DQ_MQB,Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
+ SG_ COUNTER : 8|4@1+ (1,0) [0|15] "" Getriebe_DQ_Hybrid_MQB,Getriebe_DQ_MQB,Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
+ SG_ Status_1 : 13|1@1+ (1,0) [0|1] "" Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
+ SG_ Lenkradwinkel : 13|16@1+ (0.024,0) [0|720] "Unit_DegreOfArc" Getriebe_DQ_Hybrid_MQB,Getriebe_DQ_MQB,Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
+ SG_ Lenkradwinkel_VZ : 31|1@1+ (1,0) [0|1] "" Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
+ SG_ Status_2 : 33|1@1+ (1,0) [0|1] "" Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
+ SG_ Status_3 : 34|1@1+ (1,0) [0|1] "" Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
+ SG_ Status_4 : 35|1@1+ (1,0) [0|1] "" Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
 
 BO_ 290 ACC_06: 8 Gateway_MQB
  SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" Getriebe_DQ_Hybrid_MQB,Getriebe_DQ_MQB,Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
@@ -1427,3 +1427,7 @@ VAL_ 302 ACC_Hold_Type 0 "no_request" 1 "hold" 2 "park" 3 "hold_standby" 4 "star
 VAL_ 391 GearPosition 2 "P" 3 "R" 4 "N" 5 "D" 6 "D";
 VAL_ 391 RegenBrakingMode 0 "default" 1 "B1" 2 "B2" 3 "B3";
 VAL_ 870 Fast_Send_Rate_Active 0 "1 Hz" 1 "50 Hz";
+VAL_ 304 Status_1 0 "PLA_inaktiv" 1 "PLA_aktiv (check this, maybe constantly 0)"
+VAL_ 304 Status_2 0 "PLA_inaktiv" 1 "PLA_aktiv"
+VAL_ 304 Status_3 0 "PLA_inaktiv" 1 "PLA_aktiv"
+VAL_ 304 Status_4 0 "PLA_aktiv" 1 "PLA_inaktiv"
