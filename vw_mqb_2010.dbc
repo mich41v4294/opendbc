@@ -39,7 +39,7 @@ BO_ 304 PLA_01: 8 Gateway_MQB
  SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" Getriebe_DQ_Hybrid_MQB,Getriebe_DQ_MQB,Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
  SG_ COUNTER : 8|4@1+ (1,0) [0|15] "" Getriebe_DQ_Hybrid_MQB,Getriebe_DQ_MQB,Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
  SG_ Status_1 : 13|1@1+ (1,0) [0|1] "" Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
- SG_ Lenkradwinkel : 13|16@1+ (0.024,0) [0|720] "Unit_DegreOfArc" Getriebe_DQ_Hybrid_MQB,Getriebe_DQ_MQB,Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
+ SG_ Lenkradwinkel : 14|15@1+ (0.024,0) [0|720] "Unit_DegreOfArc" Getriebe_DQ_Hybrid_MQB,Getriebe_DQ_MQB,Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
  SG_ Lenkradwinkel_VZ : 31|1@1+ (1,0) [0|1] "" Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
  SG_ Status_2 : 33|1@1+ (1,0) [0|1] "" Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
  SG_ Status_3 : 34|1@1+ (1,0) [0|1] "" Motor_Diesel_MQB,Motor_Hybrid_MQB,Motor_Otto_MQB
